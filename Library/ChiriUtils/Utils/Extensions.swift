@@ -6,6 +6,16 @@
 //  Copyright © 2019 Mauricio Chirino. All rights reserved.
 //
 
+extension UICollectionView {
+    func deque<T: UICollectionViewCell>(for id: String = String(describing: T.self),
+                                        at indexPath: IndexPath) -> T {
+        guard let dequeued = self.dequeueReusableCell(withReuseIdentifier: id, for: indexPath) as? T else {
+            preconditionFailure("Check your UICollectionViewCell settings for \(T.self)")
+        }
+        return dequeued
+    }
+}
+
 extension UITableView {
 
     func deque<T: UITableViewCell>(for id: String = String(describing: T.self)) -> T {
