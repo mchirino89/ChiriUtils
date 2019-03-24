@@ -6,7 +6,7 @@
 //  Copyright © 2019 Mauricio Chirino. All rights reserved.
 //
 
-import Foundation
+//import Foundation
 
 struct JSONHelper {
     static func read(from filename: String) -> Data? {

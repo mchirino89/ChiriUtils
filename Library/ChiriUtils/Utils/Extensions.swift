@@ -6,6 +6,8 @@
 //  Copyright © 2019 Mauricio Chirino. All rights reserved.
 //
 
+import UIKit
+
 extension UICollectionView {
     func deque<T: UICollectionViewCell>(for id: String = String(describing: T.self),
                                         at indexPath: IndexPath) -> T {

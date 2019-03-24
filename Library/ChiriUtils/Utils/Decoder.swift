@@ -6,8 +6,6 @@
 //  Copyright © 2019 Mauricio Chirino. All rights reserved.
 //
 
-import Foundation
-
 protocol JSONDecodable {
     func map<T: Decodable>(basedOn input: Data, with strategy: JSONDecoder.KeyDecodingStrategy) -> T
 }
