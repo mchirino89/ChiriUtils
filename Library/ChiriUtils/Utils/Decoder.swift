@@ -8,10 +8,13 @@
 
 import Foundation
 
-struct Decoder {
+protocol JSONDecodable {
+    func map<T: Decodable>(basedOn input: Data, with strategy: JSONDecoder.KeyDecodingStrategy) -> T
+}
 
-    static func map<T: Decodable>(basedOn input: Data,
-                                  with strategy: JSONDecoder.KeyDecodingStrategy = .useDefaultKeys) -> T {
+extension JSONDecodable {
+    func map<T: Decodable>(basedOn input: Data,
+                           with strategy: JSONDecoder.KeyDecodingStrategy = .useDefaultKeys) -> T {
         let decoder = JSONDecoder()
         decoder.keyDecodingStrategy = strategy
         do {
@@ -21,5 +24,5 @@ struct Decoder {
             preconditionFailure("Impossible to decode received input to type \(T.self): \(error.localizedDescription)")
         }
     }
-
 }
+
