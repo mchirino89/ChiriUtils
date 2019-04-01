@@ -180,6 +180,7 @@
 					};
 					E12809A12247FBF7000B07D8 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
 				};
 			};
@@ -437,7 +438,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = Personal.ChiriUtilsTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -455,7 +456,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = Personal.ChiriUtilsTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
