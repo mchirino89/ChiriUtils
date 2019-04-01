@@ -5,7 +5,7 @@ This helper [library](https://cocoapods.org/pods/ChiriUtils) includes some of th
 
 - `JSONHelper`: read locally stored files within your project or inside the app's bundle with this _factory_ class.
 
-- `Result`: make your API calls type safe using this `enum` so that all states are handled. Optionally, convert all JSON success response data into your custom _Decodable_ models (backwards compatibility with Swift 4.2).
+- `Result`: make your API calls type safe using this `enum` so that all states are handled. Optionally, convert all JSON success response data into your custom _Decodable_ models (backwards compatibility with Swift 4).
 
 - And more: deque your `UITableView`/`UICollectionView` in a typesafe way. Avoid the _guard-let-else_ dance altogether or even worse: the infamaus force casting **!**
 
