@@ -8,7 +8,7 @@
 
 //import Foundation
 
-struct JSONHelper {
+public struct JSONHelper {
     static func read(from filename: String) -> Data? {
         do {
             guard let file = Bundle.main.url(forResource: filename, withExtension: "json") else {
