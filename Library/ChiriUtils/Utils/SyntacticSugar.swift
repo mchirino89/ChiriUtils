@@ -14,4 +14,4 @@ public enum Result<T, U> where U: Error {
 }
 
 // TODO: Test this
-extension Result: JSONDecodable where T == Decodable { }
+//extension Result: JSONDecodable where T == Decodable { }

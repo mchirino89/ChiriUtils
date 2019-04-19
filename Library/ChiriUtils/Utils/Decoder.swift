@@ -6,13 +6,17 @@
 //  Copyright © 2019 Mauricio Chirino. All rights reserved.
 //
 
-protocol JSONDecodable {
-    func map<T: Decodable>(basedOn input: Data, with strategy: JSONDecoder.KeyDecodingStrategy) -> T
+import Foundation
+
+enum JSONDecodableError: Error {
+    case missingKey
+    case wrongFormat
 }
 
-extension JSONDecodable {
-    func map<T: Decodable>(basedOn input: Data,
-                           with strategy: JSONDecoder.KeyDecodingStrategy = .useDefaultKeys) -> T {
+// This could also be a protocol
+public struct JSONDecodable {
+    public static func map<T: Decodable>(basedOn input: Data,
+                                  with strategy: JSONDecoder.KeyDecodingStrategy = .useDefaultKeys) -> T {
         let decoder = JSONDecoder()
         decoder.keyDecodingStrategy = strategy
         do {

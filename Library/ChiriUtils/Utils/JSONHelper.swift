@@ -6,24 +6,25 @@
 //  Copyright © 2019 Mauricio Chirino. All rights reserved.
 //
 
-//import Foundation
+import Foundation
 
 public struct JSONHelper {
-    static func read(from filename: String) -> Data? {
+    static func read(in bundle: Bundle = .main, from filename: String) -> Data? {
         do {
-            guard let file = Bundle.main.url(forResource: filename, withExtension: "json") else {
-                print("No json file found for \(filename)")
+            guard let file = bundle.url(forResource: filename, withExtension: "json") else {
+                NSLog("No json file found for \(filename)")
                 return nil
             }
             return try Data(contentsOf: file)
         } catch {
-            print(error.localizedDescription)
+            NSLog(error.localizedDescription)
         }
         return nil
     }
 
     static func readAt(url: String) -> Data? {
-        let fileName = url + ".json"
+        let urlExtension = ".json"
+        let fileName = url.hasSuffix(urlExtension) ? url : url + urlExtension
 
         do {
             if !FileManager.default.fileExists(atPath: fileName) {
@@ -32,7 +33,7 @@ public struct JSONHelper {
             }
             return try Data(contentsOf: URL(fileURLWithPath: fileName))
         } catch {
-            print(error.localizedDescription)
+            NSLog(error.localizedDescription)
             return nil
         }
     }
