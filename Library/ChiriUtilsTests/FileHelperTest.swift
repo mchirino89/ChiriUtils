@@ -1,5 +1,5 @@
 //
-//  JSONHelperTest.swift
+//  FileHelperTest.swift
 //  ChiriUtilsTests
 //
 //  Created by Mauricio Chirino on 18/04/2019.
@@ -21,7 +21,7 @@ struct User: Codable {
     }
 }
 
-class JSONHelperTest: XCTestCase {
+class FileHelperTest: XCTestCase {
 
     let fileName = "Temporal.json"
     let folderPath = NSTemporaryDirectory()
@@ -53,26 +53,22 @@ class JSONHelperTest: XCTestCase {
     }
 
     func testJSONReadingFromBundle() {
-        let localFile = JSONHelper.read(in: Bundle(for: type(of: self)), from: "testJSON")
+        let localFile = FileHelper.read(in: Bundle(for: type(of: self)), from: "validJSON")
         XCTAssertNotNil(localFile)
     }
 
-    func testFailingReadinfFromBundle() {
-        XCTAssertNil(JSONHelper.read(from: ""), "Returning nil in case of wrong path/bundle")
+    func testNonExistingFileFromBundle() {
+        let localFile = FileHelper.read(in: Bundle(for: type(of: self)), from: "", and: .text)
+        XCTAssertNil(localFile)
     }
 
     func testReadLocalFile() {
         let path = folderPath + fileName
-        XCTAssertNotNil(JSONHelper.readAt(url: path))
-    }
-
-    func testReadLocalFileWithoutJSONExtension() {
-        let path = folderPath + fileName.split(separator: ".").first!
-        XCTAssertNotNil(JSONHelper.readAt(url: path))
+        XCTAssertNotNil(FileHelper.readAt(url: path))
     }
 
     func testFailingReadingOfLocalFile() {
-        XCTAssertNil(JSONHelper.readAt(url: ""), "Returning nil if file isn't found")
+        XCTAssertNil(FileHelper.readAt(url: ""), "Returning nil if file isn't found")
     }
 
 }
