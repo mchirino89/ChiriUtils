@@ -13,7 +13,7 @@ Pod::Spec.new do |s|
   s.social_media_url   = "http://twitter.com/chirino89m"
   s.platform     = :ios
   s.ios.deployment_target = "11.0"
-  s.swift_version = "4"
+  s.swift_version = "4.2"
   s.source       = { :git => "https://github.com/mchirino89/ChiriUtils.git", :tag => "#{s.version}" }
   s.source_files = "Library/ChiriUtils/**/*.{swift}"
   s.license = { :type => "MIT", :file => "LICENSE" }
