@@ -9,18 +9,6 @@
 import XCTest
 @testable import ChiriUtils
 
-struct User: Codable {
-    let name: String
-    let age: Int
-    let birthday: Int
-
-    init() {
-        name = "Mauricio Chirino"
-        age = 29
-        birthday = 620319600
-    }
-}
-
 class FileHelperTest: XCTestCase {
 
     let fileName = "Temporal.json"
@@ -41,7 +29,7 @@ class FileHelperTest: XCTestCase {
                                                  withIntermediateDirectories: true,
                                                  attributes: nil)
         let filePath = folderPath.appending(fileName)
-        guard let json = try? JSONEncoder().encode(User()) else {
+        guard let json = try? JSONEncoder().encode(TestUser()) else {
             XCTFail("Something went wrong when encoding test User structure")
             return
         }

@@ -8,11 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		E12809A32247FBF7000B07D8 /* ChiriUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E12809992247FBF7000B07D8 /* ChiriUtils.framework */; };
-		E12809A82247FBF7000B07D8 /* ChiriUtilsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12809A72247FBF7000B07D8 /* ChiriUtilsTests.swift */; };
+		E12809A82247FBF7000B07D8 /* DecoderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12809A72247FBF7000B07D8 /* DecoderTests.swift */; };
 		E12809B42247FC4F000B07D8 /* FileHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12809B32247FC4F000B07D8 /* FileHelper.swift */; };
 		E1563EDD22480A1400EEE588 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1563EDC22480A1400EEE588 /* Extensions.swift */; };
 		E16867F322693AF80037B17B /* validJSON.json in Resources */ = {isa = PBXBuildFile; fileRef = E16867EF226938E00037B17B /* validJSON.json */; };
 		E16867F7226956BF0037B17B /* FileHelperTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16867F6226956BF0037B17B /* FileHelperTest.swift */; };
+		E16867FB226A72F00037B17B /* TestUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16867FA226A72F00037B17B /* TestUser.swift */; };
 		E17A8AD0224800F700CEBF2D /* ChiriUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = E17A8ACE224800F700CEBF2D /* ChiriUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E17A8AD4224803D200CEBF2D /* Decoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = E17A8AD3224803D200CEBF2D /* Decoder.swift */; };
 		E17A8AD6224806CE00CEBF2D /* SyntacticSugar.swift in Sources */ = {isa = PBXBuildFile; fileRef = E17A8AD5224806CE00CEBF2D /* SyntacticSugar.swift */; };
@@ -31,12 +32,13 @@
 /* Begin PBXFileReference section */
 		E12809992247FBF7000B07D8 /* ChiriUtils.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ChiriUtils.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E12809A22247FBF7000B07D8 /* ChiriUtilsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChiriUtilsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		E12809A72247FBF7000B07D8 /* ChiriUtilsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChiriUtilsTests.swift; sourceTree = "<group>"; };
+		E12809A72247FBF7000B07D8 /* DecoderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecoderTests.swift; sourceTree = "<group>"; };
 		E12809A92247FBF7000B07D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E12809B32247FC4F000B07D8 /* FileHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileHelper.swift; sourceTree = "<group>"; };
 		E1563EDC22480A1400EEE588 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		E16867EF226938E00037B17B /* validJSON.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = validJSON.json; sourceTree = "<group>"; };
 		E16867F6226956BF0037B17B /* FileHelperTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileHelperTest.swift; sourceTree = "<group>"; };
+		E16867FA226A72F00037B17B /* TestUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestUser.swift; sourceTree = "<group>"; };
 		E17A8ACE224800F700CEBF2D /* ChiriUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChiriUtils.h; sourceTree = "<group>"; };
 		E17A8ACF224800F700CEBF2D /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E17A8AD3224803D200CEBF2D /* Decoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Decoder.swift; sourceTree = "<group>"; };
@@ -93,11 +95,28 @@
 			isa = PBXGroup;
 			children = (
 				E12809A92247FBF7000B07D8 /* Info.plist */,
-				E16867F6226956BF0037B17B /* FileHelperTest.swift */,
-				E12809A72247FBF7000B07D8 /* ChiriUtilsTests.swift */,
-				E16867EF226938E00037B17B /* validJSON.json */,
+				E16867FA226A72F00037B17B /* TestUser.swift */,
+				E16867F9226A72B10037B17B /* Decoder */,
+				E16867F8226A630A0037B17B /* FileHelper */,
 			);
 			path = ChiriUtilsTests;
+			sourceTree = "<group>";
+		};
+		E16867F8226A630A0037B17B /* FileHelper */ = {
+			isa = PBXGroup;
+			children = (
+				E16867F6226956BF0037B17B /* FileHelperTest.swift */,
+				E16867EF226938E00037B17B /* validJSON.json */,
+			);
+			path = FileHelper;
+			sourceTree = "<group>";
+		};
+		E16867F9226A72B10037B17B /* Decoder */ = {
+			isa = PBXGroup;
+			children = (
+				E12809A72247FBF7000B07D8 /* DecoderTests.swift */,
+			);
+			path = Decoder;
 			sourceTree = "<group>";
 		};
 		E17A8ACD224800F700CEBF2D /* Support */ = {
@@ -112,10 +131,10 @@
 		E17A8AD22248038400CEBF2D /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				E12809B32247FC4F000B07D8 /* FileHelper.swift */,
 				E17A8AD3224803D200CEBF2D /* Decoder.swift */,
-				E17A8AD5224806CE00CEBF2D /* SyntacticSugar.swift */,
 				E1563EDC22480A1400EEE588 /* Extensions.swift */,
+				E12809B32247FC4F000B07D8 /* FileHelper.swift */,
+				E17A8AD5224806CE00CEBF2D /* SyntacticSugar.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -243,7 +262,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				E16867F7226956BF0037B17B /* FileHelperTest.swift in Sources */,
-				E12809A82247FBF7000B07D8 /* ChiriUtilsTests.swift in Sources */,
+				E12809A82247FBF7000B07D8 /* DecoderTests.swift in Sources */,
+				E16867FB226A72F00037B17B /* TestUser.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
