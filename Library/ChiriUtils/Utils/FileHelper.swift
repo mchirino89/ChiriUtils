@@ -19,7 +19,7 @@ public enum FileExtension: String {
 
 public struct FileHelper {
     // Check why it finds a JSON file is filename parameter is left empty
-    static func read(in bundle: Bundle = .main,
+    public static func read(in bundle: Bundle = .main,
                      from filename: String, and type: FileExtension = .json) -> Data? {
         guard let file = bundle.url(forResource: filename, withExtension: type.value) else {
             NSLog("No file found for \(filename).\(type.value)")
@@ -28,7 +28,7 @@ public struct FileHelper {
         return try! Data(contentsOf: file)
     }
 
-    static func readAt(url: String) -> Data? {
+    public static func readAt(url: String) -> Data? {
         if !FileManager.default.fileExists(atPath: url) {
             NSLog("File doesn't exist: \(url)")
             return nil

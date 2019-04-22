@@ -10,7 +10,10 @@
 		E12809A32247FBF7000B07D8 /* ChiriUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E12809992247FBF7000B07D8 /* ChiriUtils.framework */; };
 		E12809A82247FBF7000B07D8 /* DecoderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12809A72247FBF7000B07D8 /* DecoderTests.swift */; };
 		E12809B42247FC4F000B07D8 /* FileHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12809B32247FC4F000B07D8 /* FileHelper.swift */; };
+		E12A2E36226E472D006F3CF2 /* TestCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12A2E35226E472D006F3CF2 /* TestCollectionViewCell.swift */; };
 		E1563EDD22480A1400EEE588 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1563EDC22480A1400EEE588 /* Extensions.swift */; };
+		E16767E8226D24A600BABFD3 /* ExtensionTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16767E7226D24A600BABFD3 /* ExtensionTest.swift */; };
+		E16767EA226D278C00BABFD3 /* TestTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16767E9226D278C00BABFD3 /* TestTableViewCell.swift */; };
 		E16867F322693AF80037B17B /* validJSON.json in Resources */ = {isa = PBXBuildFile; fileRef = E16867EF226938E00037B17B /* validJSON.json */; };
 		E16867F7226956BF0037B17B /* FileHelperTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16867F6226956BF0037B17B /* FileHelperTest.swift */; };
 		E16867FB226A72F00037B17B /* TestUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16867FA226A72F00037B17B /* TestUser.swift */; };
@@ -35,7 +38,10 @@
 		E12809A72247FBF7000B07D8 /* DecoderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecoderTests.swift; sourceTree = "<group>"; };
 		E12809A92247FBF7000B07D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E12809B32247FC4F000B07D8 /* FileHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileHelper.swift; sourceTree = "<group>"; };
+		E12A2E35226E472D006F3CF2 /* TestCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCollectionViewCell.swift; sourceTree = "<group>"; };
 		E1563EDC22480A1400EEE588 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		E16767E7226D24A600BABFD3 /* ExtensionTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionTest.swift; sourceTree = "<group>"; };
+		E16767E9226D278C00BABFD3 /* TestTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestTableViewCell.swift; sourceTree = "<group>"; };
 		E16867EF226938E00037B17B /* validJSON.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = validJSON.json; sourceTree = "<group>"; };
 		E16867F6226956BF0037B17B /* FileHelperTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileHelperTest.swift; sourceTree = "<group>"; };
 		E16867FA226A72F00037B17B /* TestUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestUser.swift; sourceTree = "<group>"; };
@@ -98,8 +104,19 @@
 				E16867FA226A72F00037B17B /* TestUser.swift */,
 				E16867F9226A72B10037B17B /* Decoder */,
 				E16867F8226A630A0037B17B /* FileHelper */,
+				E16767E6226D23CA00BABFD3 /* UIContainers */,
 			);
 			path = ChiriUtilsTests;
+			sourceTree = "<group>";
+		};
+		E16767E6226D23CA00BABFD3 /* UIContainers */ = {
+			isa = PBXGroup;
+			children = (
+				E16767E7226D24A600BABFD3 /* ExtensionTest.swift */,
+				E16767E9226D278C00BABFD3 /* TestTableViewCell.swift */,
+				E12A2E35226E472D006F3CF2 /* TestCollectionViewCell.swift */,
+			);
+			path = UIContainers;
 			sourceTree = "<group>";
 		};
 		E16867F8226A630A0037B17B /* FileHelper */ = {
@@ -261,9 +278,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E12A2E36226E472D006F3CF2 /* TestCollectionViewCell.swift in Sources */,
 				E16867F7226956BF0037B17B /* FileHelperTest.swift in Sources */,
 				E12809A82247FBF7000B07D8 /* DecoderTests.swift in Sources */,
 				E16867FB226A72F00037B17B /* TestUser.swift in Sources */,
+				E16767E8226D24A600BABFD3 /* ExtensionTest.swift in Sources */,
+				E16767EA226D278C00BABFD3 /* TestTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

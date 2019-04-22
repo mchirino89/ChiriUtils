@@ -8,7 +8,7 @@
 
 import Foundation
 
-enum JSONDecodableError: Error {
+public enum JSONDecodableError: Error {
     case missingKey(CodingKey)
     case missingValue(Any.Type)
     case wrongFormat(Any.Type)
