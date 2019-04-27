@@ -8,10 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		4D16EB9969A9E01353FA3A4E /* Pods_TestDrive.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3342711BEE6287DE4AC50416 /* Pods_TestDrive.framework */; };
-		717399A42273ED62009CE67B /* MainTableViewController+Delegates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717399A32273ED62009CE67B /* MainTableViewController+Delegates.swift */; };
+		71575CD12273F05700D8C5BC /* TableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71575CD02273F05700D8C5BC /* TableViewDataSource.swift */; };
+		717399A42273ED62009CE67B /* TableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717399A32273ED62009CE67B /* TableViewDelegate.swift */; };
 		7177091D2273EA13006874B6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7177091C2273EA13006874B6 /* AppDelegate.swift */; };
-		7177091F2273EA13006874B6 /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7177091E2273EA13006874B6 /* MainTableViewController.swift */; };
-		717709222273EA13006874B6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 717709202273EA13006874B6 /* Main.storyboard */; };
+		7177091F2273EA13006874B6 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7177091E2273EA13006874B6 /* MainViewController.swift */; };
 		717709242273EA15006874B6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 717709232273EA15006874B6 /* Assets.xcassets */; };
 		717709272273EA15006874B6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 717709252273EA15006874B6 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
@@ -29,11 +29,11 @@
 /* Begin PBXFileReference section */
 		26C37914FA2DC62339AB6604 /* Pods-TestDrive.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestDrive.release.xcconfig"; path = "Pods/Target Support Files/Pods-TestDrive/Pods-TestDrive.release.xcconfig"; sourceTree = "<group>"; };
 		3342711BEE6287DE4AC50416 /* Pods_TestDrive.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestDrive.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		717399A32273ED62009CE67B /* MainTableViewController+Delegates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MainTableViewController+Delegates.swift"; sourceTree = "<group>"; };
+		71575CD02273F05700D8C5BC /* TableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewDataSource.swift; sourceTree = "<group>"; };
+		717399A32273ED62009CE67B /* TableViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewDelegate.swift; sourceTree = "<group>"; };
 		717709192273EA13006874B6 /* TestDrive.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestDrive.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7177091C2273EA13006874B6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		7177091E2273EA13006874B6 /* MainTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
-		717709212273EA13006874B6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7177091E2273EA13006874B6 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		717709232273EA15006874B6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		717709262273EA15006874B6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		717709282273EA15006874B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -77,12 +77,19 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		71575CCF2273F04400D8C5BC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				71575CD02273F05700D8C5BC /* TableViewDataSource.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		717399A02273EC36009CE67B /* UI */ = {
 			isa = PBXGroup;
 			children = (
 				717709232273EA15006874B6 /* Assets.xcassets */,
 				717709252273EA15006874B6 /* LaunchScreen.storyboard */,
-				717709202273EA13006874B6 /* Main.storyboard */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -90,8 +97,8 @@
 		717399A12273EC41009CE67B /* Support */ = {
 			isa = PBXGroup;
 			children = (
-				717709282273EA15006874B6 /* Info.plist */,
 				7177091C2273EA13006874B6 /* AppDelegate.swift */,
+				717709282273EA15006874B6 /* Info.plist */,
 			);
 			path = Support;
 			sourceTree = "<group>";
@@ -99,8 +106,8 @@
 		717399A22273EC50009CE67B /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				7177091E2273EA13006874B6 /* MainTableViewController.swift */,
-				717399A32273ED62009CE67B /* MainTableViewController+Delegates.swift */,
+				7177091E2273EA13006874B6 /* MainViewController.swift */,
+				717399A32273ED62009CE67B /* TableViewDelegate.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -127,6 +134,7 @@
 		7177091B2273EA13006874B6 /* TestDrive */ = {
 			isa = PBXGroup;
 			children = (
+				71575CCF2273F04400D8C5BC /* Model */,
 				717399A22273EC50009CE67B /* Controller */,
 				717399A12273EC41009CE67B /* Support */,
 				717399A02273EC36009CE67B /* UI */,
@@ -219,7 +227,6 @@
 			files = (
 				717709272273EA15006874B6 /* LaunchScreen.storyboard in Resources */,
 				717709242273EA15006874B6 /* Assets.xcassets in Resources */,
-				717709222273EA13006874B6 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,8 +283,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7177091F2273EA13006874B6 /* MainTableViewController.swift in Sources */,
-				717399A42273ED62009CE67B /* MainTableViewController+Delegates.swift in Sources */,
+				7177091F2273EA13006874B6 /* MainViewController.swift in Sources */,
+				717399A42273ED62009CE67B /* TableViewDelegate.swift in Sources */,
+				71575CD12273F05700D8C5BC /* TableViewDataSource.swift in Sources */,
 				7177091D2273EA13006874B6 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -300,14 +308,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		717709202273EA13006874B6 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				717709212273EA13006874B6 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		717709252273EA15006874B6 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
