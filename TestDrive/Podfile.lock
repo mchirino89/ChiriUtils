@@ -1,0 +1,16 @@
+PODS:
+  - ChiriUtils (0.0.3)
+
+DEPENDENCIES:
+  - ChiriUtils
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - ChiriUtils
+
+SPEC CHECKSUMS:
+  ChiriUtils: 264598be3b9c400456e3d79d2c890a3cf08f2372
+
+PODFILE CHECKSUM: 509fe609b5642bde674559bdb4e47e07f79291e2
+
+COCOAPODS: 1.5.3

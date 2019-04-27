@@ -1,0 +1,6 @@
+framework module ChiriUtils {
+  umbrella header "ChiriUtils-umbrella.h"
+
+  export *
+  module * { export * }
+}

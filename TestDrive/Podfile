@@ -1,0 +1,10 @@
+# Uncomment the next line to define a global platform for your project
+platform :ios, '11.0'
+
+target 'TestDrive' do
+  use_frameworks!
+
+  # Pods for TestDrive
+  pod 'ChiriUtils'
+
+end
