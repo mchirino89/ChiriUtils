@@ -19,7 +19,6 @@
 		E16867FB226A72F00037B17B /* TestUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16867FA226A72F00037B17B /* TestUser.swift */; };
 		E17A8AD0224800F700CEBF2D /* ChiriUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = E17A8ACE224800F700CEBF2D /* ChiriUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E17A8AD4224803D200CEBF2D /* Decoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = E17A8AD3224803D200CEBF2D /* Decoder.swift */; };
-		E17A8AD6224806CE00CEBF2D /* SyntacticSugar.swift in Sources */ = {isa = PBXBuildFile; fileRef = E17A8AD5224806CE00CEBF2D /* SyntacticSugar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,7 +47,6 @@
 		E17A8ACE224800F700CEBF2D /* ChiriUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChiriUtils.h; sourceTree = "<group>"; };
 		E17A8ACF224800F700CEBF2D /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E17A8AD3224803D200CEBF2D /* Decoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Decoder.swift; sourceTree = "<group>"; };
-		E17A8AD5224806CE00CEBF2D /* SyntacticSugar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyntacticSugar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,7 +149,6 @@
 				E17A8AD3224803D200CEBF2D /* Decoder.swift */,
 				E1563EDC22480A1400EEE588 /* Extensions.swift */,
 				E12809B32247FC4F000B07D8 /* FileHelper.swift */,
-				E17A8AD5224806CE00CEBF2D /* SyntacticSugar.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -218,11 +215,11 @@
 				TargetAttributes = {
 					E12809982247FBF7000B07D8 = {
 						CreatedOnToolsVersion = 10.1;
-						LastSwiftMigration = 1010;
+						LastSwiftMigration = 1020;
 					};
 					E12809A12247FBF7000B07D8 = {
 						CreatedOnToolsVersion = 10.1;
-						LastSwiftMigration = 1010;
+						LastSwiftMigration = 1020;
 					};
 				};
 			};
@@ -232,6 +229,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = E128098F2247FBF7000B07D8;
 			productRefGroup = E128099A2247FBF7000B07D8 /* Products */;
@@ -268,7 +266,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				E17A8AD4224803D200CEBF2D /* Decoder.swift in Sources */,
-				E17A8AD6224806CE00CEBF2D /* SyntacticSugar.swift in Sources */,
 				E12809B42247FC4F000B07D8 /* FileHelper.swift in Sources */,
 				E1563EDD22480A1400EEE588 /* Extensions.swift in Sources */,
 			);
