@@ -12,6 +12,20 @@ extension Sequence {
     var eachPair: AnySequence<(Element, Element)> {
         AnySequence(zip(self, self.dropFirst()))
     }
+
+    func count(where predicate: (Element) -> Bool) -> Int {
+        var count = 0
+        for item in self {
+            if predicate(item) {
+                count += 1
+            }
+        }
+        return count
+    }
+
+    func sorted<T: Comparable>(on propertyAncestor: (Element) -> T) -> [Element] {
+        self.sorted(by: { propertyAncestor($0) < propertyAncestor($1) })
+    }
 }
 
 extension Sequence where Element: Numeric {

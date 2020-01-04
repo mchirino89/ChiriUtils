@@ -18,7 +18,7 @@ public enum FileExtension: String {
 }
 
 public struct FileHelper {
-    // Check why it finds a JSON file is filename parameter is left empty
+    // TODO: Check why it finds a JSON file is filename parameter is left empty
     public static func read(in bundle: Bundle = .main,
                      from filename: String, and type: FileExtension = .json) -> Data? {
         guard let file = bundle.url(forResource: filename, withExtension: type.value) else {

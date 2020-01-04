@@ -6,4 +6,8 @@
 //  Copyright © 2020 Mauricio Chirino. All rights reserved.
 //
 
-import Foundation
+public extension Array where Element: BinaryFloatingPoint {
+    var average: Element {
+        sum / Element(self.count)
+    }
+}
