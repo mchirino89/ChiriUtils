@@ -33,3 +33,15 @@ extension Sequence where Element: Numeric {
         self.reduce(0, +)
     }
 }
+
+extension Sequence where Element: Equatable {
+    func numberOfOccurrences(of target: Element) -> Int {
+        return reduce(0) { result, element in
+            guard element == target else {
+                return result
+            }
+
+            return result + 1
+        }
+    }
+}
