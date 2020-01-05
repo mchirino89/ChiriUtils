@@ -12,6 +12,8 @@
 		57743B5E23C103D800CC8376 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57743B5D23C103D800CC8376 /* UIViewController.swift */; };
 		57743B6023C1044200CC8376 /* Sequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57743B5F23C1044200CC8376 /* Sequence.swift */; };
 		57743B6423C1054A00CC8376 /* Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57743B6323C1054A00CC8376 /* Array.swift */; };
+		57743B6A23C161D500CC8376 /* ArrayTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57743B6923C161D500CC8376 /* ArrayTestCase.swift */; };
+		57743B6C23C1650400CC8376 /* SequenceTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57743B6B23C1650400CC8376 /* SequenceTestCase.swift */; };
 		E12809A32247FBF7000B07D8 /* ChiriUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E12809992247FBF7000B07D8 /* ChiriUtils.framework */; };
 		E12809A82247FBF7000B07D8 /* DecoderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12809A72247FBF7000B07D8 /* DecoderTests.swift */; };
 		E12809B42247FC4F000B07D8 /* FileHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12809B32247FC4F000B07D8 /* FileHelper.swift */; };
@@ -42,6 +44,8 @@
 		57743B5D23C103D800CC8376 /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
 		57743B5F23C1044200CC8376 /* Sequence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sequence.swift; sourceTree = "<group>"; };
 		57743B6323C1054A00CC8376 /* Array.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Array.swift; sourceTree = "<group>"; };
+		57743B6923C161D500CC8376 /* ArrayTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayTestCase.swift; sourceTree = "<group>"; };
+		57743B6B23C1650400CC8376 /* SequenceTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SequenceTestCase.swift; sourceTree = "<group>"; };
 		E12809992247FBF7000B07D8 /* ChiriUtils.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ChiriUtils.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E12809A22247FBF7000B07D8 /* ChiriUtilsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChiriUtilsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E12809A72247FBF7000B07D8 /* DecoderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecoderTests.swift; sourceTree = "<group>"; };
@@ -107,6 +111,23 @@
 			path = Logic;
 			sourceTree = "<group>";
 		};
+		57743B6523C160DF00CC8376 /* SequencesTests */ = {
+			isa = PBXGroup;
+			children = (
+				57743B6923C161D500CC8376 /* ArrayTestCase.swift */,
+				57743B6B23C1650400CC8376 /* SequenceTestCase.swift */,
+			);
+			path = SequencesTests;
+			sourceTree = "<group>";
+		};
+		57743B6623C161A900CC8376 /* Stubs */ = {
+			isa = PBXGroup;
+			children = (
+				E16867FA226A72F00037B17B /* TestUser.swift */,
+			);
+			path = Stubs;
+			sourceTree = "<group>";
+		};
 		E128098F2247FBF7000B07D8 = {
 			isa = PBXGroup;
 			children = (
@@ -138,9 +159,10 @@
 			isa = PBXGroup;
 			children = (
 				E12809A92247FBF7000B07D8 /* Info.plist */,
-				E16867FA226A72F00037B17B /* TestUser.swift */,
+				57743B6623C161A900CC8376 /* Stubs */,
 				E16867F9226A72B10037B17B /* Decoder */,
 				E16867F8226A630A0037B17B /* FileHelper */,
+				57743B6523C160DF00CC8376 /* SequencesTests */,
 				E16767E6226D23CA00BABFD3 /* UIContainers */,
 			);
 			path = ChiriUtilsTests;
@@ -323,7 +345,9 @@
 				E16867F7226956BF0037B17B /* FileHelperTest.swift in Sources */,
 				E12809A82247FBF7000B07D8 /* DecoderTests.swift in Sources */,
 				E16867FB226A72F00037B17B /* TestUser.swift in Sources */,
+				57743B6A23C161D500CC8376 /* ArrayTestCase.swift in Sources */,
 				E16767E8226D24A600BABFD3 /* ExtensionTest.swift in Sources */,
+				57743B6C23C1650400CC8376 /* SequenceTestCase.swift in Sources */,
 				E16767EA226D278C00BABFD3 /* TestTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
