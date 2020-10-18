@@ -1,0 +1,18 @@
+name: CI
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  build-and-test:
+
+    runs-on: macos-latest
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Build and test
+      run: xcodebuild clean build test -project MyStickers.xcodeproj -scheme MyStickersTests -destination "name=iPhone 8,OS=13.4.1" OBJROOT=$(PWD)/build SYMROOT=$(PWD)/build | xcpretty -s
