@@ -7,6 +7,7 @@
 //
 
 public extension UIViewController {
+    /// Checks whether the current view controller is visible the window
     var isVisible: Bool {
         self.view.window != nil
     }

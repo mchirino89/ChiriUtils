@@ -38,6 +38,4 @@ final class SequenceTestCase: XCTestCase {
         // Then
         XCTAssertEqual(largestDigitsOccurrences, 3)
     }
-
-    
 }

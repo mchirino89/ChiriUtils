@@ -7,6 +7,8 @@
 //
 
 public extension UIImageView {
+    /// Reports image view's aspect ratio. For instance, an square image (height and width equal) will report an aspect ratio of 1, otherwise the value will be
+    /// the resulting division of its width and its height
     var aspectRatio: CGFloat {
         frame.width / frame.height
     }

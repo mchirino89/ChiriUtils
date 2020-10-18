@@ -21,13 +21,10 @@ public extension Sequence {
         }
         return count
     }
-
-    func sorted<T: Comparable>(on propertyAncestor: (Element) -> T) -> [Element] {
-        self.sorted(by: { propertyAncestor($0) < propertyAncestor($1) })
-    }
 }
 
 public extension Sequence where Element: Numeric {
+    /// Provides the sum of all elements in the collection
     var sum: Element {
         self.reduce(0, +)
     }
