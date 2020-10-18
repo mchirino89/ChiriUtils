@@ -7,11 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		575A7A83253C9EB9009EF605 /* RandomGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575A7A82253C9EB9009EF605 /* RandomGenerator.swift */; };
+		575A7A91253CAE01009EF605 /* UIImageViewTestCases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575A7A90253CAE01009EF605 /* UIImageViewTestCases.swift */; };
+		575A7A95253CB418009EF605 /* UIViewControllerTestCases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575A7A94253CB418009EF605 /* UIViewControllerTestCases.swift */; };
+		57743B5A23C1011D00CC8376 /* UICollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57743B5923C1011D00CC8376 /* UICollectionView.swift */; };
+		57743B5C23C1034900CC8376 /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57743B5B23C1034900CC8376 /* UIImage.swift */; };
+		57743B5E23C103D800CC8376 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57743B5D23C103D800CC8376 /* UIViewController.swift */; };
+		57743B6023C1044200CC8376 /* Sequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57743B5F23C1044200CC8376 /* Sequence.swift */; };
+		57743B6423C1054A00CC8376 /* Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57743B6323C1054A00CC8376 /* Array.swift */; };
+		57743B6A23C161D500CC8376 /* ArrayTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57743B6923C161D500CC8376 /* ArrayTestCase.swift */; };
+		57743B6C23C1650400CC8376 /* SequenceTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57743B6B23C1650400CC8376 /* SequenceTestCase.swift */; };
 		E12809A32247FBF7000B07D8 /* ChiriUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E12809992247FBF7000B07D8 /* ChiriUtils.framework */; };
 		E12809A82247FBF7000B07D8 /* DecoderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12809A72247FBF7000B07D8 /* DecoderTests.swift */; };
 		E12809B42247FC4F000B07D8 /* FileHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12809B32247FC4F000B07D8 /* FileHelper.swift */; };
 		E12A2E36226E472D006F3CF2 /* TestCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12A2E35226E472D006F3CF2 /* TestCollectionViewCell.swift */; };
-		E1563EDD22480A1400EEE588 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1563EDC22480A1400EEE588 /* Extensions.swift */; };
+		E1563EDD22480A1400EEE588 /* UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1563EDC22480A1400EEE588 /* UITableView.swift */; };
 		E16767E8226D24A600BABFD3 /* ExtensionTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16767E7226D24A600BABFD3 /* ExtensionTest.swift */; };
 		E16767EA226D278C00BABFD3 /* TestTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16767E9226D278C00BABFD3 /* TestTableViewCell.swift */; };
 		E16867F322693AF80037B17B /* validJSON.json in Resources */ = {isa = PBXBuildFile; fileRef = E16867EF226938E00037B17B /* validJSON.json */; };
@@ -32,13 +42,23 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		575A7A82253C9EB9009EF605 /* RandomGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomGenerator.swift; sourceTree = "<group>"; };
+		575A7A90253CAE01009EF605 /* UIImageViewTestCases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageViewTestCases.swift; sourceTree = "<group>"; };
+		575A7A94253CB418009EF605 /* UIViewControllerTestCases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerTestCases.swift; sourceTree = "<group>"; };
+		57743B5923C1011D00CC8376 /* UICollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICollectionView.swift; sourceTree = "<group>"; };
+		57743B5B23C1034900CC8376 /* UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
+		57743B5D23C103D800CC8376 /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
+		57743B5F23C1044200CC8376 /* Sequence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sequence.swift; sourceTree = "<group>"; };
+		57743B6323C1054A00CC8376 /* Array.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Array.swift; sourceTree = "<group>"; };
+		57743B6923C161D500CC8376 /* ArrayTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayTestCase.swift; sourceTree = "<group>"; };
+		57743B6B23C1650400CC8376 /* SequenceTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SequenceTestCase.swift; sourceTree = "<group>"; };
 		E12809992247FBF7000B07D8 /* ChiriUtils.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ChiriUtils.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E12809A22247FBF7000B07D8 /* ChiriUtilsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChiriUtilsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E12809A72247FBF7000B07D8 /* DecoderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecoderTests.swift; sourceTree = "<group>"; };
 		E12809A92247FBF7000B07D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E12809B32247FC4F000B07D8 /* FileHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileHelper.swift; sourceTree = "<group>"; };
 		E12A2E35226E472D006F3CF2 /* TestCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCollectionViewCell.swift; sourceTree = "<group>"; };
-		E1563EDC22480A1400EEE588 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		E1563EDC22480A1400EEE588 /* UITableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableView.swift; sourceTree = "<group>"; };
 		E16767E7226D24A600BABFD3 /* ExtensionTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionTest.swift; sourceTree = "<group>"; };
 		E16767E9226D278C00BABFD3 /* TestTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestTableViewCell.swift; sourceTree = "<group>"; };
 		E16867EF226938E00037B17B /* validJSON.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = validJSON.json; sourceTree = "<group>"; };
@@ -68,6 +88,53 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		57743B5823C1011100CC8376 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				57743B6223C1053F00CC8376 /* Logic */,
+				57743B6123C1053700CC8376 /* UI */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		57743B6123C1053700CC8376 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				E1563EDC22480A1400EEE588 /* UITableView.swift */,
+				57743B5923C1011D00CC8376 /* UICollectionView.swift */,
+				57743B5B23C1034900CC8376 /* UIImage.swift */,
+				57743B5D23C103D800CC8376 /* UIViewController.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		57743B6223C1053F00CC8376 /* Logic */ = {
+			isa = PBXGroup;
+			children = (
+				57743B6323C1054A00CC8376 /* Array.swift */,
+				57743B5F23C1044200CC8376 /* Sequence.swift */,
+				575A7A82253C9EB9009EF605 /* RandomGenerator.swift */,
+			);
+			path = Logic;
+			sourceTree = "<group>";
+		};
+		57743B6523C160DF00CC8376 /* SequencesTests */ = {
+			isa = PBXGroup;
+			children = (
+				57743B6923C161D500CC8376 /* ArrayTestCase.swift */,
+				57743B6B23C1650400CC8376 /* SequenceTestCase.swift */,
+			);
+			path = SequencesTests;
+			sourceTree = "<group>";
+		};
+		57743B6623C161A900CC8376 /* Stubs */ = {
+			isa = PBXGroup;
+			children = (
+				E16867FA226A72F00037B17B /* TestUser.swift */,
+			);
+			path = Stubs;
+			sourceTree = "<group>";
+		};
 		E128098F2247FBF7000B07D8 = {
 			isa = PBXGroup;
 			children = (
@@ -99,9 +166,10 @@
 			isa = PBXGroup;
 			children = (
 				E12809A92247FBF7000B07D8 /* Info.plist */,
-				E16867FA226A72F00037B17B /* TestUser.swift */,
 				E16867F9226A72B10037B17B /* Decoder */,
 				E16867F8226A630A0037B17B /* FileHelper */,
+				57743B6523C160DF00CC8376 /* SequencesTests */,
+				57743B6623C161A900CC8376 /* Stubs */,
 				E16767E6226D23CA00BABFD3 /* UIContainers */,
 			);
 			path = ChiriUtilsTests;
@@ -113,6 +181,8 @@
 				E16767E7226D24A600BABFD3 /* ExtensionTest.swift */,
 				E16767E9226D278C00BABFD3 /* TestTableViewCell.swift */,
 				E12A2E35226E472D006F3CF2 /* TestCollectionViewCell.swift */,
+				575A7A90253CAE01009EF605 /* UIImageViewTestCases.swift */,
+				575A7A94253CB418009EF605 /* UIViewControllerTestCases.swift */,
 			);
 			path = UIContainers;
 			sourceTree = "<group>";
@@ -147,8 +217,8 @@
 			isa = PBXGroup;
 			children = (
 				E17A8AD3224803D200CEBF2D /* Decoder.swift */,
-				E1563EDC22480A1400EEE588 /* Extensions.swift */,
 				E12809B32247FC4F000B07D8 /* FileHelper.swift */,
+				57743B5823C1011100CC8376 /* Extensions */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -210,7 +280,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1010;
-				LastUpgradeCheck = 1010;
+				LastUpgradeCheck = 1200;
 				ORGANIZATIONNAME = "Mauricio Chirino";
 				TargetAttributes = {
 					E12809982247FBF7000B07D8 = {
@@ -266,8 +336,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				E17A8AD4224803D200CEBF2D /* Decoder.swift in Sources */,
+				57743B5C23C1034900CC8376 /* UIImage.swift in Sources */,
+				57743B6023C1044200CC8376 /* Sequence.swift in Sources */,
+				57743B5E23C103D800CC8376 /* UIViewController.swift in Sources */,
 				E12809B42247FC4F000B07D8 /* FileHelper.swift in Sources */,
-				E1563EDD22480A1400EEE588 /* Extensions.swift in Sources */,
+				57743B6423C1054A00CC8376 /* Array.swift in Sources */,
+				57743B5A23C1011D00CC8376 /* UICollectionView.swift in Sources */,
+				575A7A83253C9EB9009EF605 /* RandomGenerator.swift in Sources */,
+				E1563EDD22480A1400EEE588 /* UITableView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,8 +355,12 @@
 				E16867F7226956BF0037B17B /* FileHelperTest.swift in Sources */,
 				E12809A82247FBF7000B07D8 /* DecoderTests.swift in Sources */,
 				E16867FB226A72F00037B17B /* TestUser.swift in Sources */,
+				57743B6A23C161D500CC8376 /* ArrayTestCase.swift in Sources */,
 				E16767E8226D24A600BABFD3 /* ExtensionTest.swift in Sources */,
+				57743B6C23C1650400CC8376 /* SequenceTestCase.swift in Sources */,
 				E16767EA226D278C00BABFD3 /* TestTableViewCell.swift in Sources */,
+				575A7A95253CB418009EF605 /* UIViewControllerTestCases.swift in Sources */,
+				575A7A91253CAE01009EF605 /* UIImageViewTestCases.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -321,6 +401,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -385,6 +466,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -429,7 +511,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = ChiriUtils/Support/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -456,7 +538,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = ChiriUtils/Support/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

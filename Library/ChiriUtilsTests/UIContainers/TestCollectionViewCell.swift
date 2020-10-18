@@ -8,6 +8,5 @@
 
 import UIKit
 
-class TestCollectionViewCell: UICollectionViewCell {
-    
+final class TestCollectionViewCell: UICollectionViewCell { 
 }
