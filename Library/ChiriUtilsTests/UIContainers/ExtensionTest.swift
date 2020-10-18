@@ -8,23 +8,20 @@
 
 import XCTest
 
-class ExtensionTest: XCTestCase {
-
+final class ExtensionTest: XCTestCase {
     let dummyFrame = CGRect(origin: .zero, size: CGSize(width: 0, height: 0))
 
     func testTableDequeue() {
         let testTableView = UITableView(frame: dummyFrame, style: .plain)
         testTableView.register(cellType: TestTableViewCell.self)
-        let dequeued: TestTableViewCell = testTableView.deque()
+        let dequeued: TestTableViewCell = testTableView.dequeue()
         XCTAssert(dequeued.isKind(of: TestTableViewCell.self))
     }
 
     func testCollectionDequeue() {
         let testCollectionView = UICollectionView(frame: dummyFrame, collectionViewLayout: .init())
         testCollectionView.register(cellType: TestCollectionViewCell.self)
-        let dequeued: TestCollectionViewCell = testCollectionView.deque(at: IndexPath(row: 0,
-                                                                                      section: 0))
+        let dequeued: TestCollectionViewCell = testCollectionView.dequeue(at: IndexPath(row: 0, section: 0))
         XCTAssert(dequeued.isKind(of: TestCollectionViewCell.self))
     }
-
 }

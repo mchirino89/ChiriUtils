@@ -13,7 +13,7 @@ public extension UICollectionView {
         self.register(cellType.self, forCellWithReuseIdentifier: String(describing: cellType.self))
     }
 
-    func deque<T: UICollectionViewCell>(for id: String = String(describing: T.self),
+    func dequeue<T: UICollectionViewCell>(for id: String = String(describing: T.self),
                                         at indexPath: IndexPath) -> T {
         guard let dequeued = self.dequeueReusableCell(withReuseIdentifier: id, for: indexPath) as? T else {
             preconditionFailure("Check your UICollectionViewCell settings for \(T.self)")

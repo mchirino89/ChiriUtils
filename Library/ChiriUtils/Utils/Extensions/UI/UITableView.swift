@@ -13,7 +13,7 @@ public extension UITableView {
         self.register(cellType.self, forCellReuseIdentifier: String(describing: cellType.self))
     }
 
-    func deque<T: UITableViewCell>(for id: String = String(describing: T.self)) -> T {
+    func dequeue<T: UITableViewCell>(for id: String = String(describing: T.self)) -> T {
         guard let dequeued = self.dequeueReusableCell(withIdentifier: id) as? T else {
             preconditionFailure("Check your UITableViewCell settings for \(T.self)")
         }

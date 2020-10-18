@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		575A7A83253C9EB9009EF605 /* RandomGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575A7A82253C9EB9009EF605 /* RandomGenerator.swift */; };
 		57743B5A23C1011D00CC8376 /* UICollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57743B5923C1011D00CC8376 /* UICollectionView.swift */; };
 		57743B5C23C1034900CC8376 /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57743B5B23C1034900CC8376 /* UIImage.swift */; };
 		57743B5E23C103D800CC8376 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57743B5D23C103D800CC8376 /* UIViewController.swift */; };
@@ -39,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		575A7A82253C9EB9009EF605 /* RandomGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomGenerator.swift; sourceTree = "<group>"; };
 		57743B5923C1011D00CC8376 /* UICollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICollectionView.swift; sourceTree = "<group>"; };
 		57743B5B23C1034900CC8376 /* UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
 		57743B5D23C103D800CC8376 /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
@@ -107,6 +109,7 @@
 			children = (
 				57743B6323C1054A00CC8376 /* Array.swift */,
 				57743B5F23C1044200CC8376 /* Sequence.swift */,
+				575A7A82253C9EB9009EF605 /* RandomGenerator.swift */,
 			);
 			path = Logic;
 			sourceTree = "<group>";
@@ -159,10 +162,10 @@
 			isa = PBXGroup;
 			children = (
 				E12809A92247FBF7000B07D8 /* Info.plist */,
-				57743B6623C161A900CC8376 /* Stubs */,
 				E16867F9226A72B10037B17B /* Decoder */,
 				E16867F8226A630A0037B17B /* FileHelper */,
 				57743B6523C160DF00CC8376 /* SequencesTests */,
+				57743B6623C161A900CC8376 /* Stubs */,
 				E16767E6226D23CA00BABFD3 /* UIContainers */,
 			);
 			path = ChiriUtilsTests;
@@ -333,6 +336,7 @@
 				E12809B42247FC4F000B07D8 /* FileHelper.swift in Sources */,
 				57743B6423C1054A00CC8376 /* Array.swift in Sources */,
 				57743B5A23C1011D00CC8376 /* UICollectionView.swift in Sources */,
+				575A7A83253C9EB9009EF605 /* RandomGenerator.swift in Sources */,
 				E1563EDD22480A1400EEE588 /* UITableView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -9,36 +9,35 @@
 import XCTest
 @testable import ChiriUtils
 
-struct PairGenerator: Sequence, IteratorProtocol, Equatable {
-    var current = 1
+final class SequenceTestCase: XCTestCase {
+    var randomArray: [Int]!
 
-    mutating func next() -> Int? {
-        defer {
-            current += 1
-        }
-
-        return current
-    }
-
-    static func == (lhs: PairGenerator, rhs: PairGenerator) -> Bool {
-        lhs.current == rhs.current
-    }
-}
-
-class SequenceTestCase: XCTestCase {
-    func testPairs() {
+    override func setUp() {
+        super.setUp()
         // Given
-        let dummyArray = PairGenerator()
-        var i = 0
-        // When
-        let pairs = dummyArray.eachPair
-        let stubPairs = [(1,2), (2,3), (3,4)]
-        // Then
-        for container in pairs.enumerated() {
-            XCTAssertEqual(container.element.0, stubPairs[container.offset].0)
-            XCTAssertEqual(container.element.1, stubPairs[container.offset].1)
-            i += 1
-            if i == 3 { break }
-        }
+        randomArray = [0,0,0,0,0,1,200,3,4,5,65,546,546,3]
     }
+
+    override func tearDown() {
+        super.tearDown()
+        randomArray = nil
+    }
+
+    func testOccurrencesWithinASequence() {
+        // When
+        let zeroOccurrencesWithinArray = randomArray.numberOfOccurrences(of: 0)
+
+        // Then
+        XCTAssertEqual(zeroOccurrencesWithinArray, 5)
+    }
+
+    func testMatchesWithinASequence() {
+        // When
+        let largestDigitsOccurrences = randomArray.count(where: { $0 > 100 })
+
+        // Then
+        XCTAssertEqual(largestDigitsOccurrences, 3)
+    }
+
+    
 }
